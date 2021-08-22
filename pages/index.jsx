@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/Layout/Layout";
 
-export default function Home() {
+const Home = () => {
   return (
     <Layout>
       <section className="flex items-center justify-center gap-[34px]">
@@ -15,4 +15,6 @@ export default function Home() {
       </section>
     </Layout>
   );
-}
+};
+
+export default Home;
