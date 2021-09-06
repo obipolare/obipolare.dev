@@ -4,7 +4,7 @@ const index = () => {
   return (
     <Layout>
       <section className="w-10/12 mx-auto">
-        <h1>blog</h1>
+        <h1>About</h1>
       </section>
     </Layout>
   );

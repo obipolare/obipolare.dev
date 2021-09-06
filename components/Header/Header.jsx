@@ -1,26 +1,40 @@
 import Link from "next/link";
+import Hamburger from "hamburger-react";
+import { useState } from "react";
 
 const Header = () => {
+    const [isOpen, setOpen] = useState(false);
+
   return (
     <header className="text-white ">
-      <nav className="flex items-center justify-between h-[92px] w-10/12 mx-auto">
-        <figure>
-          <img src="/assets/svg/clover.svg" alt="This is a clover image" />
-        </figure>
-        <ul className="flex items-center">
+      <nav className="flex flex-col items-center justify-between w-10/12 mx-auto sm:flex-row h-[92px]">
+        <div className="flex items-center justify-between w-full h-full ">
+          <figure className="relative z-50">
+            <img src="/assets/svg/clover.svg" alt="This is a clover image" />
+          </figure>
+          <button className="relative z-50 block sm:hidden">
+            <Hamburger toggled={isOpen} toggle={setOpen} />
+          </button>
+        </div>
+
+        <ul
+          className={`${
+            isOpen ? "flex" : "hidden"
+          } sm:flex flex-col sm:flex-row items-center font-semibold text-[18px] sm:static absolute top-0 bg-[#212529] sm:bg-transparent w-full sm:w-auto pt-24 sm:pt-0`}
+        >
           <li>
             <Link href="/">
-              <a className="text-[18px]">Home</a>
+              <a className="">Home</a>
             </Link>
           </li>
-          <li className="px-[56px]">
+          <li className="px-[56px] py-[20px] sm:py-0">
             <Link href="/blog">
-              <a className="text-[18px]">Blog</a>
+              <a>Blog</a>
             </Link>
           </li>
-          <li>
+          <li className="pb-[16px] sm:pb-0">
             <Link href="/about">
-              <a className="text-[18px]">About</a>
+              <a>About</a>
             </Link>
           </li>
         </ul>
