@@ -6,7 +6,7 @@ const index = () => {
           <figure class="main-figure ">
             <img
               class="main-figure__img"
-              src="/assets/img/luck2.jpeg"
+              src="/assets/img/luckv2.jpg"
               alt="Luck voltia"
             />
           </figure>
