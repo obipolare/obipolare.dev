@@ -13,7 +13,7 @@ const Home = () => {
             <p>I'm Obipolare</p>
           </header>
           <figure className="py-[55px]">
-            <img src="/assets/img/luck.png" alt="" />
+            <img src="/assets/img/luckv2.jpg" alt="" />
           </figure>
         </section>
         <figure className="mt-[80px] ">
