@@ -5,7 +5,7 @@ const Footer = () => {
         Obipolare © 2021
       </p>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

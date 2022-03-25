@@ -1,9 +1,9 @@
-import Link from "next/link";
-import Hamburger from "hamburger-react";
-import { useState } from "react";
+import Link from "next/link"
+import Hamburger from "hamburger-react"
+import { useState } from "react"
 
 const Header = () => {
-    const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false)
 
   return (
     <header className="text-white ">
@@ -40,7 +40,7 @@ const Header = () => {
         </ul>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
