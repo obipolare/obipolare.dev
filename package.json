@@ -1,5 +1,5 @@
 {
-  "name": "quiosco-app",
+  "name": "obipolare-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,17 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "hamburger-react": "^2.4.1",
-    "next": "^12.2.0",
-    "react": "^18.1.0",
+    "hamburger-react": "^2.5.0",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^18.0.0",
-    "@types/react": "^18.0.12",
-    "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.5",
-    "tailwindcss": "^3.0.23",
-    "typescript": "^4.7.4"
+    "@types/node": "^20.11.16",
+    "@types/react": "^18.2.55",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.34",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^4.9.5"
   }
 }
